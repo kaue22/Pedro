@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script>
+        function calcular() {
+            let valorx = document.getElementById('valorx').value
+            let valory = document.getElementById('valory').value
+
+            let resultado = parseFloat(valorx) + parseFloat(valory)
+
+            document.getElementById('resultado').value = resultado
+            alert('Cálculo realizado com sucesso!')
+        }
+    </script>
+    <style>
+        body {background-color: powderblue;}
+        h1 {color: blue;} 
+        p {color: red;} 
+      </style>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+
+<body>
+
+    <body bgcolor="">
+    <h1>Calculadora - Soma Valor</h1>
+
+    <br>
+    <label>Valor 1</label>
+    <input type="number" id="valorx">
+    <br>
+    <br>
+    <label>Valor 2</label>
+    <input type="number" id="valory">
+
+    <br>
+    <br>
+    <button type="button" onclick="calcular()">Calcular</button>
+
+    <br>
+    <label>Resultado</label>
+    <br>
+    <input type="number" id="resultado">
+</body>
+
+</html>
